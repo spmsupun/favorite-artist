@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { Provider } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
+import store from './stores';
+import Home from './pages/home';
+import Album from './pages/album';
+import Track from './pages/track';
+import Favorite from './pages/favorite';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/album" element={<Album />} />
+        <Route path="/track" element={<Track />} />
+        <Route path="/favorite" element={<Favorite />} />
+      </Routes>
+    </Provider>
   );
 }
-
-export default App;
