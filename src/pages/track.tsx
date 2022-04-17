@@ -26,10 +26,10 @@ export default function Track() {
       <Navbar />
       <Container maxWidth="lg">
         <Grid container spacing={3}>
-          <Grid item xs={8} sm={4} md={3.5}>
+          <Grid item xs={12} sm={12} md={4.5} lg={3.5}>
             <img src={img} alt="" />
           </Grid>
-          <Grid item xs={8} sm={4} md={8}>
+          <Grid item xs={12} sm={12} md={7.5}>
             <h1>
               {track.name}
               {' '}
