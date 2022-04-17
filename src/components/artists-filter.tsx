@@ -74,7 +74,7 @@ export default function ArtistsFilter() {
             >
               <img
                 width={40}
-                src={artist.image.find((imageItem: any) => imageItem.size === 'large')?.['#text'] ?? 'https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png'}
+                src={artist.image.find((imageItem: any) => imageItem.size === 'large')?.['#text'] ?? 'https://picsum.photos/124/124'}
                 alt={artist.name}
               />
               <span>{artist.name}</span>

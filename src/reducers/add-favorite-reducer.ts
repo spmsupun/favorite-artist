@@ -14,4 +14,5 @@ const addFavoriteReducer = (state: any = [], action: any = null) => {
       return state;
   }
 };
+
 export default addFavoriteReducer;

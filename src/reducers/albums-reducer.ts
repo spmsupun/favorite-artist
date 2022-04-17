@@ -8,4 +8,5 @@ const albumsReducer = (state: any = [], action: any = null) => {
       return state;
   }
 };
+
 export default albumsReducer;

@@ -8,4 +8,5 @@ const artistReducer = (state: any = [], action: any = null) => {
       return state;
   }
 };
+
 export default artistReducer;

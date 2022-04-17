@@ -8,4 +8,5 @@ const tracksReducer = (state: any = [], action: any = null) => {
       return state;
   }
 };
+
 export default tracksReducer;

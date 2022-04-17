@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-export default function AlbumItem(props:any) {
-  const { album } = props;
+export default function AlbumItem({ album }:any) {
   const [image, setImage] = useState('');
 
   useEffect(() => {

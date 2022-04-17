@@ -47,7 +47,6 @@ export default function Track() {
             </div>
           </Grid>
         </Grid>
-
       </Container>
     </>
   );
